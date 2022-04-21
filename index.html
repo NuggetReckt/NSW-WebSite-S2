@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <title>Accueil - NoSkillWorld</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="keywords"
+          content="serv, mc, minecraft, Minecraft, aventure, java, 1.18, 1.18.1, custom, fr, FR, français, génération, serveur, premium, survie, créatif, crea, NoSkillWorld, NuggetReckt, Herbyvor, NSW, nsw, Semi-RP, events, hardcore">
+    <meta property="og:image" content="https://play.noskillworld.fr/static/img/favicon.png">
+    <meta property="og:image:type" content="object">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="150">
+    <meta property="og:image:alt" content="logo NoSkillWorld">
+    <meta property="og:site_name" content="play.noskillworld.fr">
+    <meta name="theme-color" content="#2C70BA">
+    <meta property="og:title" content="Accueil - NoSkillWorld">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://play.noskillworld.fr">
+    <meta property="og:description"
+          content="Site internet du serveur Minecraft NoSkillWorld. Rejoins le serveur avec tes amis ou solo pour vivre de formidables aventures !">
+    <meta name="twitter:site" content="play.noskillworld.fr">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:src" content="https://play.noskillworld.fr/static/img/favicon.png">
+    <meta name="twitter:description"
+          content="Site internet du serveur Minecraft NoSkillWorld. Rejoins le serveur avec tes amis ou solo pour vivre de formidables aventures !">
+    <link rel="stylesheet" href="static/stylesheets/style_global.css">
+    <link rel="stylesheet" href="static/stylesheets/style_index.css">
+    <link rel="stylesheet" href="static/stylesheets/style_port.css">
+    <link rel="shortcut icon" href="static/img/favicon.png">
+</head>
+<body>
+<div id="nav">
+    <nav>
+        <ul>
+            <div class="nsw">
+                <li class="g">
+                    <a id="nsw" href="accueil">NOSKILLWORLD</a>
+                </li>
+            </div>
+            <div class="topnav">
+                <li class="dropdown" id="topnav-spacer">
+                    <a href="javascript:void(0)" class="dropbtn, nav-up">AUTRES</a>
+                    <div class="dropdown-content">
+                        <a id="dynmap" class="nav-up-d" href="http://46.4.147.163:8123"
+                           target="_blank">DYNMAP</a>
+                        <a id="votes" class="nav-up-d" href="votes">VOTES</a>
+                        <a id="règles" class="nav-up-d" href="règles">REGLES</a>
+                        <a id="staff" class="nav-up-d" href="staff">STAFF</a>
+                    </div>
+                </li>
+            </div>
+            <div class="topnav">
+                <li class="d" id="topnav-spacer">
+                    <a id="discord" class="nav-up" href="https://discord.gg/cE4eHEZWrD" target="_blank">DISCORD</a>
+                </li>
+            </div>
+            <div class="topnav">
+                <li class="d" id="topnav-spacer">
+                    <a class="nav-up" href="https://shop.noskillworld.fr" id="boutique" target="_blank">BOUTIQUE</a>
+                </li>
+            </div>
+            <div class="topnav">
+                <li class="d" id="topnav-spacer">
+                    <a id="wiki" class="nav-up" href="wiki">WIKI</a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+</div>
+<div id="main">
+    <main>
+        <div class="home-banner">
+            <img src="static/img/logo_nsw.png" class="logo">
+            <h2 id="logo"><b>NoSKillWorld</b></h2>
+            <h3>Serveur Minecraft Semi-RP</h3>
+        </div>
+        <div class="wrapper">
+            <div class="row" id="row-up">
+                <div class="main-top-col-l" id="main-top-col">
+                    <span id="tocopy">play.noskillworld.fr</span> <input type="button" value="         " class="js-copy"
+                                                                         data-target="#tocopy">
+                    <figcaption><span>Clique pour copier l'ip !</span></figcaption>
+                </div>
+                <div class="main-top-big" id="main-top-col">
+                    <span>
+                        <span id="players_count"> </span> joueurs connectés / <span id="slots_count"> </span>
+                            <script type="text/javascript"
+                                    src="https://www.serveurs-minecraft.org/api/players_count.php?id=60934&format=jsonp"></script>
+                            <script type="text/javascript"
+                                    src="https://www.serveurs-minecraft.org/api/slots_count.php?id=60934&format=jsonp"></script>
+                            <script type="text/javascript"
+                                    src="https://www.serveurs-minecraft.org/api/is_online.php?id=60934&format=jsonp"></script>
+                            <script type="text/javascript">
+                              window.onload = function () {
+                                  var players = document.getElementById("players_count");
+                                  var slots = document.getElementById("slots_count");
+                                  if (serveurs_minecraft_org_players_count >= 0 && serveurs_minecraft_org_slots_count >= 0) {
+                                      players.innerHTML = serveurs_minecraft_org_players_count;
+                                      slots.innerHTML = serveurs_minecraft_org_slots_count;
+                                  } else {
+                                      players.innerHTML = '?';
+                                      slots.innerHTML = '?';
+                                  }
+                                  var elt = document.getElementById("is_online");
+                                  if (serveurs_minecraft_org_is_online === true)
+                                      elt.innerHTML = "Serveur en ligne :)";
+                                  else if (serveurs_minecraft_org_is_online === false)
+                                      elt.innerHTML = "Serveur hors ligne :/";
+                                  else
+                                      elt.innerHTML = "Erreur 💩";
+                              }
+                            </script>
+                        </span>
+                </div>
+                <div class="main-top-col-b" id="main-top-col">
+                    <span id="is_online"></span>
+                </div>
+            </div>
+            <div class="row" id="row-mid">
+                <div class="flex-container" id="flex-container-l">
+                    <div id="pres">
+                        <h2 style="margin-top: 0">Presentation</h2>
+                        <p>Bienvenue sur NoSkillWorld Saison 2 ! </p>
+                        <p>Rejoins-nous avec tes amis ou solo pour vivre d'inoubliables aventures RP.
+                            Pourquoi RP ? Les joueurs peuvent communiquer entre eux directement dans le jeu via Mumble.
+                            De
+                            plus, l'absence de home rend l'éxpérience de jeu plus réaliste.</p>
+                        <p>Le monde généré de manière customisée comporte des paysages à couper le souffle ! Des events
+                            fréquents ainsi qu'un serveur Hardcore pimenteront ton aventure mélangeant adrénaline et
+                            satisfaction !
+                            Rejoins play.noskillworld.fr avec tes amis pour vivre de formidables aventures !</p>
+                        <p style="margin-bottom: 0">Bon jeu sur NoSkillWorld !</p>
+                    </div>
+                    <h2>Actualites</h2>
+                    <div id="iframes">
+                        <a class="twitter-timeline" id="twitter" data-lang="fr" data-width="800" data-height="500"
+                           href="https://twitter.com/NoSkillWorld?ref_src=twsrc%5Etfw">Tweets de NoSkillWorld</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <h2>Trailer Du serveur</h2>
+                    <div id="iframes">
+                        <iframe id="yt-player" width="800" height="500" src="https://www.youtube.com/embed/jla-JXKSH_Y"
+                                title="YouTube video player" frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="flex-container" id="flex-container-r">
+                    <h2 id="h2-discord">Notre Discord</h2>
+                    <iframe id="nsw-discord" src="https://discord.com/widget?id=700249004721700955&theme=light"
+                            width="800" height="700" allowtransparency="true" frameborder="0"
+                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    <div class="discord-widget-footer">
+                        <a id="discord-footer" href="https://discord.gg/cE4eHEZWrD"
+                           target="_blank"><span>Rejoins nous !</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<br>
+<div id="footer">
+    <footer>
+        <div id="foo-left" class="foot">
+            <ul class="txt-footer-l">
+                <li id="affilié"><span>Non affilié avec Mojang AB. <br>Site créé avec ❤ par NuggetReckt</span></li>
+                <br>
+                <li id="contact"><span>Nous contacter : </span><span class="bold">contact@noskillworld.fr</span></li>
+            </ul>
+        </div>
+        <div id="foo-right" class="foot">
+            <ul class="reseaux-footer-r">
+                <li id="twitter-footer">
+                    <a href="https://twitter.com/NoSkillWorld" target="_blank"><img class="logo-f"
+                                                                                    src="static/img/twitter.svg"
+                                                                                    alt="twitter"></a>
+                </li>
+                <li id="discord-footer">
+                    <a href="https://discord.gg/cE4eHEZWrD" target="_blank"><img class="logo-f"
+                                                                                 src="static/img/discord.svg"
+                                                                                 alt="discord"></a>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="foo-down" class="foot">
+            <br>
+            <hr>
+            <br>
+            <span class="bold">Copyright © NoSKillWorld 2020 - 2022</span>
+            <br>
+        </div>
+    </footer>
+</div>
+<script>
+    var btncopy = document.querySelector('.js-copy');
+
+    if (btncopy) {
+        btncopy.addEventListener('click', docopy);
+    }
+
+    function docopy() {
+        var range = document.createRange();
+        var target = this.dataset.target;
+        var fromElement = document.querySelector(target);
+        var selection = window.getSelection();
+
+        range.selectNode(fromElement);
+        selection.removeAllRanges();
+        selection.addRange(range);
+
+        try {
+            var result = document.execCommand('copy');
+            if (result) {
+                // La copie a réussi
+                alert('IP copiée avec succès ! Bon jeu sur NoSkillWorld !');
+            }
+        } catch (err) {
+            // Une erreur est surevnue lors de la copie
+            alert(err);
+        }
+
+        selection = window.getSelection();
+
+        if (typeof selection.removeRange === 'function') {
+            selection.removeRange(range);
+        } else if (typeof selection.removeAllRanges === 'function') {
+            selection.removeAllRanges();
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+html {
+    font-family: police_custom, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+    width: 8px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: white; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #8d8d8d; /* color of the scroll thumb */
+    border-radius: 10px;
+}
+
+main {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: police_custom_3, sans-serif;
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: police_custom_3, sans-serif;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: police_custom_3, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #2C70BA;
+    font-weight: bold;
+}
+
+.nav-up {
+    color: white;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.dropdown {
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content {
+    margin-left: 18px;
+    display: none;
+    position: absolute;
+    background: rgb(44, 112, 186);
+    background: linear-gradient(90deg, rgba(61, 189, 201, 1) 0%, rgba(64, 200, 204, 1) 100%);
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul {
+    font-family: police_custom_3, sans-serif;
+    font-size: 17px;
+    vertical-align: middle;
+    list-style: none;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: 0;
+}
+
+#nsw {
+    color: white;
+}
+
+#nsw:hover {
+    transition: 0.5s;
+    color: #080075;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    color: #080075;
+}
+
+nav a {
+    transition: 0.8s;
+    color: white;
+}
+
+nav {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 55px;
+    background: rgb(44, 112, 186);
+    background: linear-gradient(90deg, rgba(44, 112, 186, 1) 0%, rgba(66, 207, 207, 1) 100%);
+    font-size: 25px;
+    box-shadow: -3px 1px 9px rgb(134, 134, 134), 3px 1px 9px rgb(134, 134, 134)
+}
+
+footer {
+    background: rgb(44, 112, 186);
+    background: linear-gradient(90deg, rgba(44, 112, 186, 1) 0%, rgba(66, 207, 207, 1) 100%);
+    text-align: center;
+    position: sticky;
+    height: 190px;
+    bottom: 0;
+    color: white;
+    width: 100%;
+}
+
+hr {
+    color: white;
+    margin-top: 20px;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+.foot {
+    margin-top: 45px;
+}
+
+#foo-down {
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    position: static;
+}
+
+#foo-left {
+    float: left;
+    margin-left: 7%;
+}
+
+#foo-right {
+    float: right;
+    margin-right: 7%;
+}
+
+.txt-footer-l {
+    font-family: police_custom_2, sans-serif;
+    font-size: 12px;
+    list-style: none;
+    margin: 0;
+}
+
+.reseaux-footer-r {
+    font-family: police_custom_2, sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 6px 0 0;
+}
+
+#twitter-footer {
+    margin-right: 40px;
+}
+
+.bold {
+    font-family: police_custom_3, sans-serif;
+}
+
+p {
+    font-family: police_custom_2, sans-serif;
+}
+
+span {
+    font-family: police_custom_2, sans-serif;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.g {
+    float: left;
+}
+
+.d {
+    float: right;
+}
+
+@font-face {
+    font-family: police_custom;
+    src: url("../fonts/Staatliches-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: police_custom_2;
+    src: url("../fonts/Mont-Regular.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: police_custom_3;
+    src: url("../fonts/Mont-Heavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: police_custom_4;
+    src: url("../fonts/Mont-ExtraLight.otf") format("opentype");
+}

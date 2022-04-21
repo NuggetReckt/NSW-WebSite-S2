@@ -1,0 +1,74 @@
+body {
+    background: url("/static/img/background.png") fixed no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: black;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: url("/static/img/background.png") fixed no-repeat;
+    z-index: -5; /* Keep the background behind the content */
+    filter: blur(6px);
+    -webkit-background-size: cover; /*Chrome et Safari */
+    -moz-background-size: cover; /*Firefox */
+    -o-background-size: cover; /*Opera */
+    background-size: cover; /* version standardisée */
+}
+
+#logo {
+    width: 256px;
+    height: 256px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: police_custom, sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.discord {
+    color: #ffffff;
+    font-family: police_custom, sans-serif;
+    text-decoration: none;
+    background: #5865F2;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@font-face {
+    font-family: police_custom;
+    src: url('../font/Mont-Heavy.otf') format('opentype');
+}

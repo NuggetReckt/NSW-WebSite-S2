@@ -1,0 +1,57 @@
+@media (max-width: 1000px) {
+    .flex-container {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #flex-container-r {
+        float: none;
+        width: 97%;
+    }
+
+    #flex-container-l {
+        float: none;
+        max-width: 97%;
+    }
+
+    main, ul, #foo-right, #foo-left{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .nav-up {
+        margin-left: 15px;
+    }
+
+    ul {
+        font-size: 18px;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .logo {
+        margin: 110px auto 0;
+        width: 18%;
+    }
+
+    .dropdown-content {
+        margin-left: -8px;
+    }
+
+    #h2-discord {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .main-vote {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+}

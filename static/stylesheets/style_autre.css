@@ -1,0 +1,156 @@
+fieldset {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 0;
+    border-radius: 5px;
+    background-color: #ffff;
+}
+
+#row {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#main-top-col {
+    color: white;
+    font-family: police_custom_bold, sans-serif;
+    width: 20%;
+}
+
+.main-top-col {
+    float: left;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    padding: 13px 15px;
+}
+
+.top-semirp {
+    background: rgb(44, 112, 186);
+    background: linear-gradient(30deg, rgba(44, 112, 186, 1) 0%, rgba(66, 207, 207, 1) 100%);
+}
+
+.top-hardcore {
+    background: rgba(66, 207, 207, 1);
+}
+
+.top-creatif {
+    background: rgba(66, 207, 207, 1);
+}
+
+.top-qr {
+    background: rgb(44, 112, 186);
+    background: linear-gradient(120deg, rgba(66, 207, 207, 1) 0%, rgba(44, 112, 186, 1) 100%);
+}
+
+#title-up {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-size: 100%;
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-image: url(../img/background.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        background-position-y: 0;
+        background-size: 400%;
+    }
+
+    span {
+        font-size: 13px;
+    }
+}
+
+.main-vote {
+    margin-right: 250px;
+    margin-left: 250px;
+    width: auto;
+}
+
+#h3-vote {
+    padding-top: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#bold {
+    font-family: police_custom_3, sans-serif;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#s-title {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.staff-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.user-box .name {
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+    font-variant-ligatures: none;
+    color: #000;
+}
+
+.user-box {
+    text-align: center;
+}
+
+.block {
+    box-shadow: 0 1px 5px rgb(0 0 0);
+    border-radius: 10px;
+}
+
+.li-staff {
+    margin: 0;
+    padding: 0;
+    width: 33%;
+}
+
+#scrollUp {
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    opacity: 0.75;
+}
+
+@font-face {
+    font-family: police_custom_3;
+    src: url("../fonts/Mont-Heavy.otf") format("opentype");
+}

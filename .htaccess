@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^règles$ rules.html [NC]
+RewriteRule ^wiki$ wiki.html [NC]
+RewriteRule ^staff$ staff.html [NC]
+RewriteRule ^soon$ soon.html [NC]
+RewriteRule ^votes$ votes.html [NC]
+RewriteRule ^accueil$ index.html [NC]
