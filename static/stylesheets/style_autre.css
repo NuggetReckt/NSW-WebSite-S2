@@ -15,7 +15,7 @@ fieldset {
     justify-content: space-between;
 }
 
-#main-top-col {
+.main-top-col-top {
     color: white;
     font-family: police_custom_bold, sans-serif;
     width: 20%;
@@ -34,20 +34,20 @@ fieldset {
     padding: 13px 15px;
 }
 
-.top-semirp {
+#top-semirp {
     background: rgb(44, 112, 186);
     background: linear-gradient(30deg, rgba(44, 112, 186, 1) 0%, rgba(66, 207, 207, 1) 100%);
 }
 
-.top-hardcore {
+#top-hardcore {
     background: rgba(66, 207, 207, 1);
 }
 
-.top-creatif {
+#top-creatif {
     background: rgba(66, 207, 207, 1);
 }
 
-.top-qr {
+#top-qr {
     background: rgb(44, 112, 186);
     background: linear-gradient(120deg, rgba(66, 207, 207, 1) 0%, rgba(44, 112, 186, 1) 100%);
 }
