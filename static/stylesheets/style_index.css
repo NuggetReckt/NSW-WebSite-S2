@@ -1,9 +1,10 @@
 .home-banner {
     height: 450px;
-    background: #492337 url(../img/background.png) center;
     background-size: cover;
     text-align: center;
     border-radius: 0 0 7px 7px;
+    background: #492337 url(../img/background.png) center fixed no-repeat;
+    background-position-y: -200px;
 }
 
 .home-banner h2 {
