@@ -5,4 +5,4 @@
 >
 >*Développé par NuggetReckt*
 > 
-><img src="https://play.noskillworld.fr/static/img/favicon.png" alt="nsw-logo" width="200"/>
+><img src="https://play.noskillworld.fr/assets/images/favicon.ico" alt="nsw-logo" width="200"/>
